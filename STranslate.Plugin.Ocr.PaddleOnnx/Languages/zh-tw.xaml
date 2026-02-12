@@ -1,0 +1,9 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <sys:String x:Key="STranslate_Plugin_Ocr_PaddleOnnx_Info">介紹</sys:String>
+    <sys:String x:Key="STranslate_Plugin_Ocr_PaddleOnnx_Info_Text">該項目基於 RapidOcrNet 實現，使用 PP-OCR v5 模型。</sys:String>
+
+</ResourceDictionary>

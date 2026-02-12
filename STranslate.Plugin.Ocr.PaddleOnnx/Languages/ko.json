@@ -1,0 +1,4 @@
+{
+  "Name": "PaddleOCR (Onnx)",
+  "Description": "RapidOcrNet 기반 PaddleOCR 플러그인"
+}

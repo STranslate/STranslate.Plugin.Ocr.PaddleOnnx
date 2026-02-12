@@ -1,0 +1,4 @@
+{
+  "Name": "PaddleOCR (Onnx)",
+  "Description": "基於 RapidOcrNet 的飛槳 OCR 插件"
+}

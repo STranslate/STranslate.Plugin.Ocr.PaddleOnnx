@@ -1,0 +1,4 @@
+{
+  "Name": "PaddleOCR (Onnx)",
+  "Description": "PaddleOCR plugin based on RapidOcrNet"
+}
