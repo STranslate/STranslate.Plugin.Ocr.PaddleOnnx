@@ -1,5 +1,7 @@
 name: Public Plugin
 
+# https://github.com/softprops/action-gh-release/issues/236#issuecomment-1150530128
+# 无需 Token 即可发布
 permissions:
   contents: write
 
@@ -8,11 +10,11 @@ on:
     types: [published]
   push:
     tags:
-      - "*" # 匹配所有 Tag
+      - "*" # Push events to matching *, i.e. 1.0, 20.15.10
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: windows-latest # 添加EnableWindowsTargeting可支持跨平台编译WPF项目
 
     steps:
       - name: Checkout
@@ -37,6 +39,6 @@ jobs:
         with:
           tag_name: ${{ github.ref_name }}
           body_path: CHANGELOG.md
-          draft: false
+          draft: false # 设置为 false 可立即发布版本
           files: |
             ./.artifacts/plugins/*.spkg
